@@ -29,13 +29,12 @@ EVA es una aplicación web de navegación con conciencia de seguridad urbana, co
 - Botón de recentrar cuando el mapa se desincroniza del GPS
 
 ### 🔴 Capas de seguridad con datos reales
-|-----------------------|---------------------------|-----------|
+
 | Capa                  | Fuente                    | Registros |
 |-----------------------|---------------------------|-----------|
 | Homicidios            | Datos abiertos Medellín   | ~18,000   |
 | Accidentes viales     | Datos abiertos Medellín   | ~46,000   |
 | Estaciones de policía | Datos abiertos Medellín   | 7         |
-|-----------------------|---------------------------|-----------|
 
 Los homicidios se visualizan como **heatmap nativo** de MapLibre — escala de densidad del amarillo al rojo. Al hacer clic en cualquier marcador aparece un popup con información de la zona.
 
@@ -86,7 +85,7 @@ v3.0.0  ── Modo día/noche, ruta rápida/segura, fix GPS móvil
 ---
 
 ## Stack tecnológico
-|-------------------|---------------------------------------|
+
 | Categoría         | Tecnología                            |
 |-------------------|---------------------------------------|
 | Frontend          | React 19, Vite 8                      |
@@ -100,7 +99,6 @@ v3.0.0  ── Modo día/noche, ruta rápida/segura, fix GPS móvil
 | IA                | Google Gemini via `@google/genai`     |
 | Backend proxy     | Express.js + CORS                     |
 | Contenedores      | Docker + Docker Compose               |
-|-------------------|---------------------------------------|
 
 ---
 
@@ -128,13 +126,13 @@ VITE_MAPTILER_KEY=tu_key_de_maptiler
 VITE_TOMTOM_KEY=tu_key_de_tomtom
 GEMINI_API_KEY=tu_key_de_gemini
 ```
-|-----------------------|-------------------------------------------------------|--------|
+
 | Variable              | Dónde obtenerla                                       | Gratis |
 |-----------------------|-------------------------------------------------------|--------|
 | `VITE_MAPTILER_KEY`   | [maptiler.com](https://maptiler.com)                  | ✅    |
 | `VITE_TOMTOM_KEY`     | [developer.tomtom.com](https://developer.tomtom.com)  | ✅    |
 | `GEMINI_API_KEY`      | [aistudio.google.com](https://aistudio.google.com)    | ✅    |
-|-----------------------|-------------------------------------------------------|--------|
+
 
 ### 3. Correr el proyecto
 
