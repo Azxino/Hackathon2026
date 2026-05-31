@@ -1,0 +1,43 @@
+.maplibregl-ctrl {
+    display: none !important;
+}
+
+.FondoBackground {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    z-index: 999;
+}
+
+.Map {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 0;
+}
+
+/* Nodes */
+.NodeBasic {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* Usuario */
+.User {
+    background: #4aa3ff;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(74, 163, 255, 0.8);
+}
+
+.Destiny {
+    background: red;
+    border: 3px solid white;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
