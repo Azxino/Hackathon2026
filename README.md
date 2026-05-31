@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🐱 EVA Map — v3.0.0
+# 🐱 EVA Map — v3.0.1
 
 ### Plataforma de navegación inteligente y seguridad urbana para Medellín
 
@@ -80,6 +80,8 @@ v2.5.0  ── Capas de datos completamente funcionales
 v2.8.0  ── Tráfico en tiempo real + Agente IA con Gemini
    │
 v3.0.0  ── Modo día/noche, ruta rápida/segura, fix GPS móvil
+   │
+v3.0.1  ── Documentacion completa de todo el codigo
 ```
 
 ---
