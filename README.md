@@ -27,12 +27,12 @@ EVA es una aplicación web de navegación con conciencia de seguridad urbana, co
 Proporcionar una herramienta de navegación urbana que permita a los ciudadanos desplazarse minimizando riesgos asociados a criminalidad, accidentes viales y congestión vehicular.
 
 ## Objetivos Específicos
-•	Visualizar zonas de riesgo mediante datos oficiales.
-•	Calcular rutas rápidas y seguras.
-•	Integrar información climática en tiempo real.
-•	Mostrar tráfico vehicular actualizado.
-•	Permitir interacción mediante lenguaje natural utilizando IA.
-•	Funcionar en dispositivos móviles con GPS real.
+- Visualizar zonas de riesgo mediante datos oficiales.
+- Calcular rutas rápidas y seguras.
+- Integrar información climática en tiempo real.
+- Mostrar tráfico vehicular actualizado.
+- Permitir interacción mediante lenguaje natural utilizando IA.
+- Funcionar en dispositivos móviles con GPS real.
 
 
 ## Logo
