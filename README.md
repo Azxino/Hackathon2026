@@ -13,14 +13,30 @@
 
 ---
 
+## Introducción
+EVA (Enhanced Virtual Assistant) es una plataforma web de navegación inteligente y seguridad urbana desarrollada para la ciudad de Medellín, Colombia.
+El sistema integra información geoespacial, datos abiertos gubernamentales, tráfico vehicular en tiempo real, condiciones meteorológicas y un asistente de inteligencia artificial para proporcionar rutas más seguras y eficientes.
+
 ## ¿Qué es EVA?
 
 EVA es una aplicación web de navegación con conciencia de seguridad urbana, construida para Medellín. Combina GPS en tiempo real, datos oficiales de criminalidad, condiciones climáticas, tráfico en vivo y un asistente de inteligencia artificial para ayudarte a moverte por la ciudad de forma más segura e informada.
 
 ---
 
+## Objetivo General
+Proporcionar una herramienta de navegación urbana que permita a los ciudadanos desplazarse minimizando riesgos asociados a criminalidad, accidentes viales y congestión vehicular.
+
+## Objetivos Específicos
+•	Visualizar zonas de riesgo mediante datos oficiales.
+•	Calcular rutas rápidas y seguras.
+•	Integrar información climática en tiempo real.
+•	Mostrar tráfico vehicular actualizado.
+•	Permitir interacción mediante lenguaje natural utilizando IA.
+•	Funcionar en dispositivos móviles con GPS real.
+
+
 ## Logo
-<img width="25" height="25" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" />
+<img width="64" height="64" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" />
 
 ## Colores de intefaz - Modo oscuro
 <img width="4151" height="642" alt="Imagen4" src="https://github.com/user-attachments/assets/e9fbfc59-367c-4a50-869c-2d26561b98ed" />
