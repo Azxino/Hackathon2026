@@ -250,6 +250,6 @@ Los datos se procesan en el cliente: se agrupan en clusters por cuadrícula (~30
 
 <div align="center">
 
-Hecho con <img width="25" height="25" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" /> para Medellín
+Hecho con <img width="10" height="10" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" /> para Medellín
 
 </div>
