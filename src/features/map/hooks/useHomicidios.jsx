@@ -42,12 +42,31 @@ function clusterPoints(points, gridSize = 0.003) {
  * @returns {{clusters: Array, total: number, loading: boolean}}
  * Datos agrupados, cantidad total de registros y estado de carga.
  */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
 export default function useHomicidios() {
     const [clusters, setClusters] = useState([]);
     const [total, setTotal] = useState(0);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+<<<<<<< HEAD
+=======
+=======
+export default function useHomicidios(enabled = false) {
+    const [clusters, setClusters] = useState([]);
+    const [total, setTotal] = useState(0);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (!enabled) return
+
+        setLoading(true)
+
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
         async function load() {
             try {
                 const res = await fetch("/data/homicidio.csv");
@@ -77,7 +96,15 @@ export default function useHomicidios() {
             finally { setLoading(false); }
         }
         load();
+<<<<<<< HEAD
     }, []);
+=======
+<<<<<<< HEAD
+    }, []);
+=======
+    }, [enabled]);
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
 
     return { clusters, total, loading };
 }

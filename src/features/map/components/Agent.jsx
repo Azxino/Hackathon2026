@@ -138,7 +138,20 @@ export default function Agent({ mapState, homClusters, incClusters, onToggleLaye
             <button className="agent-fab" onClick={() => setOpen(v => !v)} aria-label="Abrir EVA">
                 {open
                     ? <span style={{ fontSize: 18 }}>✕</span>
+<<<<<<< HEAD
                     : <img src="/cat.png" alt="EVA" className="agent-fab__img" />
+=======
+<<<<<<< HEAD
+                    : <img src="/cat.png" alt="EVA" className="agent-fab__img" />
+=======
+                    : <img 
+                        fetchPriority="high"
+                        src="/cat.png" 
+                        alt="EVA" 
+                        className="agent-fab__img" 
+                    />
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
                 }
             </button>
 

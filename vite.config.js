@@ -19,6 +19,21 @@ export default defineConfig({
 
   server: {
     host: "0.0.0.0",
+<<<<<<< HEAD
     allowedHosts: true,
+=======
+<<<<<<< HEAD
+    allowedHosts: true,
+=======
+    port: 5173,
+    allowedHosts: true,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true
+      }
+    }
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
   },
 })

@@ -13,11 +13,29 @@ import { useEffect, useState } from "react";
  * @returns {{policias: Array<{lat: number, lng: number, nombre: string, direccion: string}>, loading: boolean}}
  * Objeto con la lista de policías normalizada y el estado de carga actual.
  */
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
 export default function usePolicias() {
     const [policias, setPolicias] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+<<<<<<< HEAD
+=======
+=======
+export default function usePolicias(enabled = false) {
+    const [policias, setPolicias] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if (!enabled) return
+
+        setLoading(true)
+
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
         async function load() {
             try {
                 // Petición al archivo CSV ubicado en la carpeta public/data
@@ -52,7 +70,15 @@ export default function usePolicias() {
             finally { setLoading(false); }
         }
         load();
+<<<<<<< HEAD
     }, []);
+=======
+<<<<<<< HEAD
+    }, []);
+=======
+    }, [enabled]);
+>>>>>>> cd387a5 (Update a v3.0.5: Mejoras en navegación e integración IA)
+>>>>>>> d82ac0b (Preparando sincronización de versión 3.1.2)
 
     return { policias, loading };
 }

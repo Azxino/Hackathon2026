@@ -1,6 +1,6 @@
 <div align="center">
 
-# <img width="25" height="25" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" /> EVA Map — v3.0.1
+# <img width="25" height="25" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" /> EVA Map — v3.1.2
 
 ### Plataforma de navegación inteligente y seguridad urbana para Medellín
 
