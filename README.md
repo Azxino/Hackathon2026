@@ -82,6 +82,8 @@ v2.8.0  ── Tráfico en tiempo real + Agente IA con Gemini
 v3.0.0  ── Modo día/noche, ruta rápida/segura, fix GPS móvil
    │
 v3.0.1  ── Documentacion completa de todo el codigo
+   │
+v3.1.2  ── Modificacion y craecion de archivos, escalabilidad
 ```
 
 ---
@@ -182,22 +184,38 @@ src/
 │   ├── components/
 │   │   ├── MapLibre.jsx                # Componente principal del mapa
 │   │   ├── Agent.jsx                   # Chatbot EVA
+│   │   ├── LayerControls.jsx           # Panel de control para la activación
 │   │   ├── Hub.jsx                     # HUD de navegación
+│   │   ├── RouteSelector.jsx           # Componente de interfaz que permite al usuario alternar entre 
 │   │   ├── SearchAddress.jsx           # Barra de búsqueda
+│   │   ├── WeatherWidget.jsx           # Componente de presentación para mostrar información meteorológica
 │   │   └── RainLayer.jsx               # Capa de radar de lluvia
+│   ├── config/
+│   │   └── configGps.jsx               # configuración para el seguimiento de ubicación
 │   ├── hooks/
+│   │   ├── useWeather.jsx              # gestionar los datos del clima
 │   │   ├── useLocation.jsx             # GPS del usuario
 │   │   ├── useHeading.jsx              # Orientación por brújula
 │   │   ├── useRouting.jsx              # Cálculo de rutas
+│   │   ├── useMapLayers.jsx            # Gestionar el estado de visibilidad
+│   │   ├── useMapRoutes.jsx            # Selección de rutas de navegación
 │   │   ├── useHomicidios.jsx           # Datos de homicidios
 │   │   ├── useIncidentes.jsx           # Datos de accidentes viales
+│   │   ├── useSmartRoutes.jsx          # Cambian las coordenadas de origen o destino
+│   │   ├── useRouteProgress.jsx        # Monitorear el progreso de una ruta
 │   │   └── usePolicias.jsx             # Estaciones de policía
 │   ├── services/
 │   │   ├── getRoute.js                 # OSRM routing
 │   │   ├── getWeather.js               # Open-Meteo
+│   │   ├── getCalculateRisk.js         # calcular el riesgo acumulado de una ruta
+│   │   ├── getSmartRoutes.js           # calcular rutas inteligentes utilizando la API de TomTom
 │   │   └── searchAddress.js            # Geocodificación MapTiler
+│   ├── utils/
+│   │   └── getVisionCone.jsx           # utilidades matemáticas para cálculos geográficos
 │   └── config/
 │       └── configGps.jsx               # Lógica de seguimiento GPS
+├── pages/
+│   └── Home.jsx                        # Página principal de la aplicación
 ├── style/css/Map/                      # CSS modular por componente
 public/
 └── data/
