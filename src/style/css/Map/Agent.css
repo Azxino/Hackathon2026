@@ -1,0 +1,245 @@
+/* ══ FAB (Floating Action Button) ══ */
+.agent-fab {
+    color: white;
+    position: absolute;
+    bottom: 24px;
+    left: 12px;
+    z-index: 1100;
+    width: 52px;
+    height: 52px;
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    outline: none; /* Quita el contorno de foco por defecto */
+}
+
+.agent-fab__img {
+    width: auto;
+    height: 100%;
+    object-fit: contain; 
+    border-radius: 0; 
+    filter: drop-shadow(0 0 4px rgba(38, 48, 49, 0.8))
+            drop-shadow(0 0 8px rgba(33, 43, 48, 0.6));
+    transition: transform 0.2s ease;
+}
+
+.agent-fab:hover .agent-fab__img {
+    transform: scale(1.04);
+}
+
+/* ══ Panel de Chat ══ */
+.agent-panel {
+    position: absolute;
+    bottom: 88px;
+    left: 12px;
+    z-index: 1100;
+    width: 320px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* Fondo oscuro casi opaco, sin tinte morado */
+    background: rgba(10, 10, 15, 0.98); 
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    /* Borde sutil cian/azul, sin morado */
+    border: 1px solid rgba(56, 189, 248, 0.1); 
+    border-radius: 20px;
+    overflow: hidden;
+    /* Sombra profunda para dar profundidad */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
+    font-family: system-ui, sans-serif;
+    /* Animación de entrada suave */
+    animation: agent-fade-in 0.3s ease-out;
+}
+
+@keyframes agent-fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cabecera del Panel */
+.agent-panel__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.agent-panel__avatar-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.agent-panel__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    /* Resplandor de texto sutil cian */
+    text-shadow: 0 0 5px rgba(165, 243, 252, 0.5); 
+}
+
+.agent-panel__sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5); /* Gris claro para el subtítulo */
+}
+
+.agent-panel__close {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.agent-panel__close:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(56, 189, 248, 1);
+}
+
+/* Mensajes */
+.agent-panel__messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Bienvenida */
+.agent-welcome {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.agent-welcome b {
+    color: #fff;
+    text-shadow: 0 0 3px rgba(56, 189, 248, 0.4);
+}
+
+.agent-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.agent-suggestion {
+    /* Fondo azul muy sutil, sin morado */
+    background: rgba(56, 189, 248, 0.05); 
+    /* Borde azul tenue */
+    border: 1px solid rgba(56, 189, 248, 0.15); 
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    padding: 8px 12px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.agent-suggestion:hover {
+    /* Fondo y borde azul más intenso al hover */
+    background: rgba(56, 189, 248, 0.15);
+    border-color: rgba(56, 189, 248, 0.4);
+    color: #fff;
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
+
+/* Burbujas */
+.agent-msg {
+    max-width: 86%;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+    position: relative; /* Para posibles efectos */
+}
+
+.agent-msg--user {
+    align-self: flex-end;
+    /* Degradado azul/cian, sin morado */
+    background: linear-gradient(135deg, #0ea5e9, #22d3ee); 
+    color: #fff;
+    border-bottom-right-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.agent-msg--assistant {
+    align-self: flex-start;
+    /* Fondo gris oscuro con toque azul muy leve, sin morado */
+    background: rgba(30, 41, 59, 0.5); 
+    /* Borde azul muy tenue */
+    border: 1px solid rgba(56, 189, 248, 0.08); 
+    color: #ececec;
+    border-bottom-left-radius: 4px;
+}
+
+/* Typing */
+.agent-typing span {
+    /* Bolitas de escribir azul claro */
+    background: rgba(56, 189, 248, 0.6); 
+    box-shadow: 0 0 3px rgba(56, 189, 248, 0.3);
+}
+
+/* Input */
+.agent-panel__input {
+    display: flex;
+    gap: 8px;
+    padding: 10px 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.agent-input {
+    flex: 1;
+    /* Fondo oscuro para el input */
+    background: rgba(0, 0, 0, 0.2); 
+    /* Borde azul muy tenue */
+    border: 1px solid rgba(56, 189, 248, 0.1); 
+    border-radius: 12px;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 13px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agent-input:focus {
+    /* Borde y brillo azul más fuerte al enfocar */
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+    outline: none;
+}
+
+.agent-send {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    /* Botón de enviar azul intenso, sin morado */
+    background: linear-gradient(135deg, #0ea5e9, #22d3ee); 
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.agent-send:hover {
+    /* Resalta el botón al hover */
+    background: linear-gradient(135deg, #38bdf8, #67e8f9);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+}
+
+@media (max-width: 480px) {
+    .agent-panel { left: 8px; right: 8px; width: auto; bottom: 80px; }
+}
