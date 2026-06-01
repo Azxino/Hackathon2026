@@ -21,14 +21,14 @@ EVA es una aplicación web de navegación con conciencia de seguridad urbana, co
 
 ## Funcionalidades principales
 
-### 🗺️ Navegación inteligente
+### Navegación inteligente
 - GPS en tiempo real con orientación por brújula y cono de visión
 - Búsqueda de destinos por nombre o dirección usando geocodificación
 - **Ruta rápida** (azul) y **ruta segura** (verde) calculadas simultáneamente
 - Recálculo automático de ruta cuando el usuario se desvía
 - Botón de recentrar cuando el mapa se desincroniza del GPS
 
-### 🔴 Capas de seguridad con datos reales
+### Capas de seguridad con datos reales
 
 | Capa                  | Fuente                    | Registros |
 |-----------------------|---------------------------|-----------|
@@ -38,28 +38,28 @@ EVA es una aplicación web de navegación con conciencia de seguridad urbana, co
 
 Los homicidios se visualizan como **heatmap nativo** de MapLibre — escala de densidad del amarillo al rojo. Al hacer clic en cualquier marcador aparece un popup con información de la zona.
 
-### 🌦️ Clima en tiempo real
+### Clima en tiempo real
 - Temperatura, velocidad del viento y estado del cielo
 - Actualización automática basada en tu ubicación GPS
 - Íconos dinámicos según el código meteorológico (despejado, lluvia, tormenta, etc.)
 - Powered by **Open-Meteo** (sin API key requerida)
 
-### 🚗 Tráfico en tiempo real
+### Tráfico en tiempo real
 - Tiles de flujo vehicular de **TomTom** superpuestos sobre el mapa
 - Verde = fluido · Naranja = moderado · Rojo = congestionado
 - Activable/desactivable desde el panel de capas
 
-### 🌧️ Radar de lluvia
+### Radar de lluvia
 - Animación de precipitación en tiempo real via **RainViewer**
 - Datos actualizados cada ciclo con los últimos frames disponibles
 
-### 🌙 Modo día / modo noche
+### Modo día / modo noche
 - Cambio manual con un botón en la esquina superior derecha
 - Activación automática entre las 7pm y las 7am
 - El mapa cambia de estilo oscuro a claro adaptando todos los paneles con variables CSS
 
-### 🤖 Asistente EVA (Gemini AI)
-El chatbot flotante (ícono del gato 🐱) puede:
+### Asistente EVA (Gemini AI)
+El chatbot flotante <img width="10" height="10" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" /> puede:
 - **Navegar** → *"Llévame al Parque El Poblado"*
 - **Controlar capas** → *"Activa homicidios"*, *"Muéstrame las policías"*
 - **Consultar seguridad** → *"¿Qué tan peligroso es Manrique?"* (usa datos reales del CSV)
