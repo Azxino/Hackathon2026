@@ -19,6 +19,18 @@ EVA es una aplicación web de navegación con conciencia de seguridad urbana, co
 
 ---
 
+## Logo
+<img width="25" height="25" alt="cat" src="https://github.com/user-attachments/assets/9caf1afa-b4a2-4b51-807c-991595a08d9a" />
+
+## Colores de intefaz - Modo oscuro
+<img width="4151" height="642" alt="Imagen4" src="https://github.com/user-attachments/assets/e9fbfc59-367c-4a50-869c-2d26561b98ed" />
+
+## Colores de accion - Rutas y capas
+<img width="3622" height="486" alt="Imagen5" src="https://github.com/user-attachments/assets/5080d5d0-4c1e-43d4-9f06-1a23ed3a7eeb" />
+
+## Tipografia
+system-ui, sans-serif
+
 ## Funcionalidades principales
 
 ### Navegación inteligente
